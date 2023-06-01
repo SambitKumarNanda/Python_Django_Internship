@@ -47,5 +47,44 @@ class for_class:
             count += 1
         print(count)
         
+        
+    def is_armstrong(self,num):
+        temp = num
+        count = 0
+        for i in str(temp):
+            temp //= 10
+            count+=1
+            
+        temp1 = num
+        sum = 0
+        for i in str(temp1):
+            sum += int(i) ** count
+            temp1/=10
+        
+        if sum == num:
+            print("Armstrong")
+        else:
+            print("Not Armstrong")
+            
+            
+    def is_palindrome(self,num):
+        temp = num
+        count = 0
+        for i in str(temp):
+            temp //= 10
+            count+=1
+        
+        temp1 = num
+        rev = 0
+        for i in str(temp1)[::-1]:
+            rev = rev * 10 + int(i)
+            temp1/=10
+            
+        if num == rev:
+            print("Palindrome")
+        else:
+            print("Not Palindrome")
+        
     
 for_obj = for_class()
+for_obj.is_palindrome(123)

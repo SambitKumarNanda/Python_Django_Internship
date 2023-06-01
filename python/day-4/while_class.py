@@ -19,18 +19,18 @@ class while_class:
             times -= 1
             
     def print_factors(self,num):
-        while num > 0:
+        while num >= i:
             if num % i == 0:
                 print(i)
-                i+=1
-                num -= 1
+            i+=1
     
     def prime_number(self,num):
         count = 0
         i = 1
-        while num > 0:
-            if n % i == 0:
+        while num >= i:
+            if num % i == 0:
                 count += 1
+            i += 1
         
         if count == 2:
             print("Prime")
@@ -39,20 +39,18 @@ class while_class:
             
     def prime_factors(self,num):
         i = 1
-        while num > 0:
+        while num >= i:
             if num % i == 0:
                 factor = i
                 count = 0
-                j = 2
-                while factor > 0:
+                j = 1
+                while factor >= j:
                     if factor % j == 0:
                         count += 1
                     j+=1
-                    factor-=1
                 if count == 2:
                     print(factor)
-        i+=1
-        num-=1
+            i+=1
         
     def num_of_digits(self,num):
         count = 0
@@ -91,3 +89,7 @@ class while_class:
             print(f"{num} is a palindrome number")
         else:
             print(f"{num} is not a palindrome number")
+            
+            
+while_obj = while_class()
+while_obj.prime_factors(40)
