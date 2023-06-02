@@ -46,5 +46,7 @@ class MathFormulas(MathFunction):
         return self.mul(self.sum(a, b),self.sum(a, b))
     
     
-# obj = MathFormulas()
-# print(obj.method1(5, 2))
+if __name__ == "__main__":
+    print("Hello")
+    obj = MathFormulas()
+    print(obj.method1(5, 2))

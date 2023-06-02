@@ -119,26 +119,27 @@ b = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # print(d)
 
 
-list_dict = [
-    {
-        "name": "John",
-        "age": 21,
-    },
-    {
-        "name": "John1",
-        "age": 22,
-    },
-    {
-        "name": "John2",
-        "age": 23,
-    },
-    {
-        "name": "John3",
-        "age": 24,
-    }
-]
+# list_dict = [
+#     {
+#         "name": "John",
+#         "age": 21,
+#     },
+#     {
+#         "name": "John1",
+#         "age": 22,
+#     },
+#     {
+#         "name": "John2",
+#         "age": 23,
+#     },
+#     {
+#         "name": "John3",
+#         "age": 24,
+#     }
+# ]
 
-for i in list_dict:
-    for k, v in i.items():
-        print(f"{k} -> {v}", end=" ")
-    print()
+# for i in list_dict:
+#     for k, v in i.items():
+#         print(f"{k} -> {v}", end=" ")
+#     print()
+
